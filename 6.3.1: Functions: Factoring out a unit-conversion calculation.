@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+double MphAndMinutesToMiles(double milesPerHour, double minutesTraveled){
+   double hoursTraveled;
+   hoursTraveled = minutesTraveled / 60.0;
+   return hoursTraveled * milesPerHour;
+}
+
+int main(void) {
+   double milesPerHour;
+   double minutesTraveled;
+
+   scanf("%lf", &milesPerHour);
+   scanf("%lf", &minutesTraveled);
+
+   printf("Miles: %lf\n", MphAndMinutesToMiles(milesPerHour, minutesTraveled));
+
+   return 0;
+}
